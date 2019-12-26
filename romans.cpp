@@ -23,6 +23,15 @@ int main() {
     c = a * b; //1087.76266996;
     cin >> d;
     y = d * c;
-    cout << fixed << setprecision(y) << y << endl;
+
+    long re = ceil(y*2);
+    if(re % 2 == 0){
+        cout << re/2 << endl;
+    }
+    else{
+        double ans = (re/2.0) + 0.5;
+        cout << fixed << setprecision(1) << ans << endl;
+    }
+    //cout << ((double)ceil(2*y))/2.0 << endl;
     //cout << roundf(c * d) << endl;
 }
