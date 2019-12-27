@@ -1,8 +1,5 @@
 a,b,c = [int(x) for x in input().split()] 
-l=[]
-l.append(a)
-l.append(b)
-l.append(c)
+l=[a,b,c]
 a = min(l)
 c = max(l)
 for x in l:
